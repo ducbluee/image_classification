@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Simple file upload using Python Flask</title>
+    </head>
+    <body>
+        <form action="/handleUpload" method="post" enctype="multipart/form-data">
+            Choose the file: <input type="file" name="photo"/><BR>
+                <input type="submit" value="Upload"/><br>
+            <table style="width:100%">
+                <tr><th><h2>image input</h2></th></tr>
+
+                <tr><th style="width: 33%"><img src="{{image}}" style="width: 448px; height: 448px"></th></tr><br>
+
+                <tr><th><h2>image output</h2></th></tr>
+                <tr>
+                  <th style="width: 20%"><img src="{{image0}}" style="width: 448px; height: 448px"></th>
+                  <th style="width: 20%"><img src="{{image1}}" style="width: 448px; height: 448px"></th> 
+                  <th style="width: 20%"><img src="{{image2}}" style="width: 448px; height: 448px"></th>
+                </tr>
+        </form>
+    </body>
+</html>
